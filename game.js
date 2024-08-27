@@ -326,10 +326,18 @@ function getPersonality(){
   return personalityType
 }
 
-function getBev(personalityType){
-  return bevPersonality[personalityType];
+function getBev(personalityType) {
+  const details = bevPersonality[personalityType];
+  return `
+    Your beverage personality is: ${details.beverage}
+    Pros: ${details.pros}
+    Cons: ${details.cons}
+    Hidden Talent: ${details.hiddenTalent}
+    Weakness: ${details.weakness}
+    How Others Describe Them: ${details.description}
+  `;
 }
 
 const personalityType = getPersonality();
 const bev = getBev(personalityType);
-alert(`Your personality type is: ${personalityType}\nYou alcoholc beverage personality is: ${bev}`)
+alert(`Your personality type is ${personalityType}\n${bev}`);
