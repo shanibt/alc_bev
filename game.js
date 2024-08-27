@@ -295,7 +295,8 @@ const quiz = [
   }
 ]
 
-const prompt=require("prompt-sync")({sigint:true}); // this is req for prompt() to work in VSCode. but not in online compiler. 
+//const prompt=require("prompt-sync")({sigint:true}); // this is req for prompt() to work in VSCode. but not in online compiler. 
+const readlineSync = require('readline-sync');
 
 function getPersonality(){
   const scores = {
@@ -308,7 +309,7 @@ function getPersonality(){
   quiz.forEach(question => {
     let answer;
     do {
-      answer = prompt(`\n${question.q}\n${question.opt.join("\n")}\nType A, B, C, or D:\n`).toUpperCase();
+      answer = readlineSync.question(`\n${question.q}\n${question.opt.join("\n")}\nType A, B, C, or D:\n`).toUpperCase();
     } while(!["A", "B", "C", "D"].includes(answer))
 
     // increment the scores based on the user's answer
