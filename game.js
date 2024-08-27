@@ -295,6 +295,8 @@ const quiz = [
   }
 ]
 
+const prompt=require("prompt-sync")({sigint:true}); // this is req for prompt() to work in VSCode. but not in online compiler. 
+
 function getPersonality(){
   const scores = {
     ISTJ: 0, ISFJ: 0, INFJ: 0, INTJ: 0,
@@ -340,4 +342,4 @@ function getBev(personalityType) {
 
 const personalityType = getPersonality();
 const bev = getBev(personalityType);
-alert(`Your personality type is ${personalityType}\n${bev}`);
+console.log(`Your personality type is ${personalityType}\n${bev}`);
