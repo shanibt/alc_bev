@@ -3,23 +3,134 @@ const bevPersonality = {
   // Sentinels (ISTJ, ISFJ, ESTJ, ESFJ)
   // Diplomats (INFJ, INFP, ENFJ, ENFP)
   // Explorers (ISTP, ISFP, ESTP, ESFP)
-
-  ISTJ: "American beer",
-  ISFJ: "White wine",
-  INFJ: "Taiwanese beer",
-  INTJ: "Whiskey",
-  ISTP: "Buzzball",
-  ISFP: "Hard seltzer",
-  INFP: "Jungle juice",
-  INTP: "Soju",
-  ESTP: "Hennessy",
-  ESTJ: "Champagne",
-  ESFJ: "Red wine",
-  ENFJ: "Pink Whitney",
-  ENFP: "Twisted Tea",
-  ENTP: "Tequila",
-  ESFP: "Beatbox",
-  ENTJ: "Vodka"
+  ISTJ: {
+    beverage: "American Beer",
+    pros: "Reliable, responsible, detail-oriented",
+    cons: "Can be rigid, may struggle with flexibility",
+    hiddenTalent: "Excellent at maintaining traditions",
+    weakness: "Struggles with spontaneity",
+    description: "Dependable, straightforward, and practical."
+  },
+  ISFJ: {
+    beverage: "White Wine",
+    pros: "Nurturing, attentive, patient",
+    cons: "May be overly self-sacrificing, avoids conflict",
+    hiddenTalent: "Exceptional at creating a warm environment",
+    weakness: "Can be overly reserved about their own needs",
+    description: "Supportive, considerate, and reliable."
+  },
+  INFJ: {
+    beverage: "Taiwanese Beer",
+    pros: "Insightful, empathetic, creative",
+    cons: "Can be overly idealistic, may withdraw from others",
+    hiddenTalent: "Deep understanding of others' emotions",
+    weakness: "Difficulty in dealing with practical issues",
+    description: "Thoughtful, introspective, and caring."
+  },
+  INTJ: {
+    beverage: "Whiskey",
+    pros: "Strategic, independent, decisive",
+    cons: "Can be perceived as aloof, overly critical",
+    hiddenTalent: "Exceptional problem-solving abilities",
+    weakness: "May struggle with emotional expression",
+    description: "Intelligent, ambitious, and sometimes intimidating."
+  },
+  ISTP: {
+    beverage: "Buzzball",
+    pros: "Adventurous, practical, adaptable",
+    cons: "Can be impulsive, struggles with long-term commitments",
+    hiddenTalent: "Excellent at improvising under pressure",
+    weakness: "Difficulty in planning for the future",
+    description: "Spontaneous, hands-on, and action-oriented."
+  },
+  ISFP: {
+    beverage: "Hard Seltzer",
+    pros: "Creative, easygoing, sensitive",
+    cons: "May avoid confrontation, can be inconsistent",
+    hiddenTalent: "Highly attuned to aesthetic details",
+    weakness: "Avoids dealing with difficult emotions directly",
+    description: "Artistic, gentle, and authentic."
+  },
+  INFP: {
+    beverage: "Jungle Juice",
+    pros: "Idealistic, empathetic, imaginative",
+    cons: "Can be impractical, struggles with decisiveness",
+    hiddenTalent: "Strong ability to see the big picture",
+    weakness: "Difficulty in dealing with mundane tasks",
+    description: "Compassionate, introspective, and passionate."
+  },
+  INTP: {
+    beverage: "Soju",
+    pros: "Analytical, innovative, curious",
+    cons: "Can be detached, may struggle with social interactions",
+    hiddenTalent: "Exceptional at complex problem-solving",
+    weakness: "Difficulty in connecting with others emotionally",
+    description: "Intellectual, unconventional, and reserved."
+  },
+  ESTP: {
+    beverage: "Hennessy",
+    pros: "Energetic, confident, action-oriented",
+    cons: "Can be reckless, may avoid long-term planning",
+    hiddenTalent: "Skilled at seizing opportunities",
+    weakness: "Difficulty in considering long-term consequences",
+    description: "Bold, charismatic, and dynamic."
+  },
+  ESTJ: {
+    beverage: "Champagne",
+    pros: "Organized, decisive, pragmatic",
+    cons: "Can be inflexible, may struggle with emotional nuances",
+    hiddenTalent: "Excellent at leadership and management",
+    weakness: "May overlook the emotional aspects of decisions",
+    description: "Efficient, authoritative, and responsible."
+  },
+  ESFJ: {
+    beverage: "Red Wine",
+    pros: "Sociable, empathetic, conscientious",
+    cons: "Can be overly concerned with approval, may avoid conflict",
+    hiddenTalent: "Strong ability to bring people together",
+    weakness: "May neglect their own needs for others' approval",
+    description: "Friendly, supportive, and caring."
+  },
+  ENFJ: {
+    beverage: "Pink Whitney",
+    pros: "Charismatic, empathetic, motivational",
+    cons: "Can be overly idealistic, may struggle with setting boundaries",
+    hiddenTalent: "Natural ability to inspire and lead",
+    weakness: "May overextend themselves to help others",
+    description: "Energetic, engaging, and supportive."
+  },
+  ENFP: {
+    beverage: "Twisted Tea",
+    pros: "Creative, enthusiastic, spontaneous",
+    cons: "Can be scattered, may struggle with follow-through",
+    hiddenTalent: "Exceptional at thinking outside the box",
+    weakness: "Difficulty in focusing on long-term goals",
+    description: "Fun-loving, imaginative, and energetic."
+  },
+  ENTP: {
+    beverage: "Tequila",
+    pros: "Inventive, outgoing, adaptable",
+    cons: "Can be argumentative, may struggle with routine",
+    hiddenTalent: "Excellent at generating new ideas",
+    weakness: "Difficulty in maintaining consistency",
+    description: "Quick-witted, innovative, and lively."
+  },
+  ESFP: {
+    beverage: "Beatbox",
+    pros: "Outgoing, fun-loving, spontaneous",
+    cons: "Can be impulsive, may struggle with responsibilities",
+    hiddenTalent: "Natural ability to entertain and energize",
+    weakness: "Difficulty in focusing on long-term commitments",
+    description: "Vibrant, entertaining, and energetic."
+  },
+  ENTJ: {
+    beverage: "Vodka",
+    pros: "Strategic, assertive, decisive",
+    cons: "Can be domineering, may overlook others perspectives",
+    hiddenTalent: "Strong leadership and organizational skills",
+    weakness: "Can be perceived as overbearing or dismissive",
+    description: "Commanding, efficient, and driven."
+  }
 }
 
 const quiz = [
