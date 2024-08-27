@@ -308,7 +308,7 @@ function getPersonality(){
   quiz.forEach(question => {
     let answer;
     do {
-      answer = prompt(`${question.q}\n${question.opt.join("\n")}\nType A, B, C, or D:\n`).toUpperCase();
+      answer = prompt(`\n${question.q}\n${question.opt.join("\n")}\nType A, B, C, or D:\n`).toUpperCase();
     } while(!["A", "B", "C", "D"].includes(answer))
 
     // increment the scores based on the user's answer
@@ -336,7 +336,7 @@ function getBev(personalityType) {
     Cons: ${details.cons}
     Hidden Talent: ${details.hiddenTalent}
     Weakness: ${details.weakness}
-    How Others Describe Them: ${details.description}
+    How Others Describe You: ${details.description}
   `;
 }
 
