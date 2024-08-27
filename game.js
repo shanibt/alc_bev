@@ -342,4 +342,5 @@ function getBev(personalityType) {
 
 const personalityType = getPersonality();
 const bev = getBev(personalityType);
-console.log(`Your personality type is ${personalityType}\n${bev}`);
+// console.log(`Your personality type is ${personalityType}\n${bev}`);
+console.log(`${bev}`);
