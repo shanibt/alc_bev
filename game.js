@@ -345,3 +345,5 @@ const personalityType = getPersonality();
 const bev = getBev(personalityType);
 // console.log(`Your personality type is ${personalityType}\n${bev}`);
 console.log(`${bev}`);
+
+// need to restructure the program to have a nextQuestion() and startGame() for the html 
