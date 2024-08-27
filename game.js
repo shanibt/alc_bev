@@ -303,7 +303,7 @@ function getPersonality(){
     ENFP: 0, ENTP: 0, ESFP: 0, ENTJ: 0
   };
 
-  quiz.forEach( (question, index) => {
+  quiz.forEach(question => {
     let answer;
     do {
       answer = prompt(`${question.q}\n${question.opt.join("\n")}\nType A, B, C, or D:\n`).toUpperCase();
